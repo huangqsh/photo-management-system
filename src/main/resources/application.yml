@@ -1,0 +1,15 @@
+server: 
+  port: 20221
+  servlet: 
+    context-path: /photo-management-system
+  
+spring: 
+  profiles: 
+    active: dev
+ 
+#微信相关接口
+#登录
+WeChat: 
+  APPID: wxe41cc82d4761888d
+  SECRET:  #小程序 appSecret
+  login: https://api.weixin.qq.com/sns/jscode2session?appid=${WeChat.APPID}&secret=${WeChat.SECRET}&js_code=%s&grant_type=authorization_code
