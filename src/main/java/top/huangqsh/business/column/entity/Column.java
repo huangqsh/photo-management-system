@@ -7,11 +7,30 @@ import javax.persistence.Table;
 @Table(name = "tab_column")
 public class Column extends BaseEntity {
 
+    // 栏目名
     private String columnName;
     // 排序
     private Integer sort;
-    // 是否显示
-    private Integer display;
+    // 显示位置
+    private String displayPositionId;
+    // 冗余字段 位置信息
+    private String positionCode;
+
+    public String getPositionCode() {
+        return positionCode;
+    }
+
+    public void setPositionCode(String positionCode) {
+        this.positionCode = positionCode;
+    }
+
+    public String getDisplayPositionId() {
+        return displayPositionId;
+    }
+
+    public void setDisplayPositionId(String displayPositionId) {
+        this.displayPositionId = displayPositionId;
+    }
 
     public String getColumnName() {
         return columnName;
@@ -29,11 +48,4 @@ public class Column extends BaseEntity {
         this.sort = sort;
     }
 
-    public Integer getDisplay() {
-        return display;
-    }
-
-    public void setDisplay(Integer display) {
-        this.display = display;
-    }
 }

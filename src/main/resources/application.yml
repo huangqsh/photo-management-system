@@ -3,8 +3,8 @@ spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://47.106.68.40:3306/test?useUnicode=true&characterEncoding=utf8&autoReconnect=true&useSSL=false
-    username: root
-    password: 95Huangqsh@aliyun.com
+    username: test
+    password: test
     # 连接池
     druid:
       # 初始化时建立物理连接的个数
